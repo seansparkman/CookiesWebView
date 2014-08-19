@@ -125,7 +125,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Cookies\Cookies\Cookies.csproj">
+    <ProjectReference Include="..\Cookies\Cookies.csproj">
       <Project>{4d710af5-8f72-4bdb-9ce5-a9a41dcde22d}</Project>
       <Name>Cookies</Name>
     </ProjectReference>
