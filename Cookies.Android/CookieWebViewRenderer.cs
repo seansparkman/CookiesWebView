@@ -56,6 +56,8 @@ namespace Cookies.Android
             foreach (var cookiePair in cookiePairs)
             {
                 var cookiePieces = cookiePair.Split('=');
+                if (cookiePieces[0].Contains(":"))
+                    cookiePieces[0] = cookiePieces[0].Substring(0, cookiePieces[0].IndexOf(":"));
                 cookies.Add(new Cookie
                 {
                     Name = cookiePieces[0],
