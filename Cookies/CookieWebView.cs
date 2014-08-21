@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace Cookies
 {
-    public delegate void WebViewNavigatedHandler(object sender, CookieNavigationEventArgs args);
+    public delegate void WebViewNavigatedHandler(object sender, CookieNavigatedEventArgs args);
     public delegate void WebViewNavigatingHandler(object sender, CookieNavigationEventArgs args);
 
     public class CookieWebView
@@ -19,7 +19,7 @@ namespace Cookies
         public event WebViewNavigatedHandler Navigated;
         public event WebViewNavigatingHandler Navigating;
 
-        public virtual void OnNavigated(CookieNavigationEventArgs args)
+        public virtual void OnNavigated(CookieNavigatedEventArgs args)
         {
             var eventHandler = Navigated;
 

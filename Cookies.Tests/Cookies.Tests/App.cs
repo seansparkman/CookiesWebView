@@ -24,7 +24,7 @@ namespace Cookies.Tests
 
                 webView.Navigated += (sender, args) =>
                 {
-                    Debug.WriteLine("Finished navigation to: {0}", args.Url);
+                    Debug.WriteLine("Finished navigation to: {0}, Cookies: {1}", args.Url, args.Cookies.Count);
                 };
                 webView.Navigating += (sender, args) =>
                 {
