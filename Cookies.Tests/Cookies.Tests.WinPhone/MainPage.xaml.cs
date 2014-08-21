@@ -5,6 +5,7 @@ using System.Net;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
+using Cookies.WinPhone;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
@@ -15,6 +16,7 @@ namespace Cookies.Tests.WinPhone
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        CookieWebViewRenderer _renderer = new CookieWebViewRenderer();
         public MainPage()
         {
             InitializeComponent();
