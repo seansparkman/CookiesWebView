@@ -4,11 +4,11 @@ CookiesWebView
 Xamarin.Forms Web View that supports cookies and loading pages event
 
 
-For Windows Phone, you will need to add this to your MainPage.xaml.cs.
+For Windows Phone, you will need to add this field initializer to your MainPage.xaml.cs.
 
     public partial class MainPage : PhoneApplicationPage
     {
-        CookieWebViewRenderer _renderer = new CookieWebViewRenderer();
+        *CookieWebViewRenderer _renderer = new CookieWebViewRenderer();*
         public MainPage()
         {
             InitializeComponent();
