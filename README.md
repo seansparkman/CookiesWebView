@@ -8,7 +8,7 @@ For Windows Phone, you will need to add this field initializer to your MainPage.
 
     public partial class MainPage : PhoneApplicationPage
     {
-        *CookieWebViewRenderer _renderer = new CookieWebViewRenderer();*
+        CookieWebViewRenderer _renderer = new CookieWebViewRenderer();
         public MainPage()
         {
             InitializeComponent();
