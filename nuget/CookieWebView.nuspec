@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>CookieWebView</id>
-		<version>1.0.4</version>
+		<version>1.0.5</version>
 		<title>Xamarin.Forms - Cookie Enabled Web View</title>
 		<authors>seansparkman</authors>
 		<owners>Sean Sparkman</owners>
@@ -36,5 +36,6 @@
 		<file src="..\Cookies.iOS\bin\iPhone\Release\Cookies.dll" target="lib\MonoTouch\Cookies.dll" />
 		<file src="..\Cookies.iOS\bin\iPhone\Release\Cookies.pdb" target="lib\MonoTouch\Cookies.pdb" />
 		<file src="..\Cookies.iOS\bin\iPhone\Release\Cookies.iOS.dll" target="lib\MonoTouch\Cookies.iOS.dll" />		
+		<file src="iOS\IncludeLinker.cs.pp" target="content\MonoTouch\IncludeLinker.cs.pp" />
 	</files>
 </package>
