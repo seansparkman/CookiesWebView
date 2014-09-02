@@ -43,16 +43,17 @@ namespace Cookies.iOS.Views
 
         public override bool ShouldStartLoad(UIWebView webView, NSUrlRequest request, UIWebViewNavigationType navigationType)
         {
+            webView.UserInteractionEnabled = false;
+            _cookieWebView.OnNavigating(new CookieNavigationEventArgs
+            {
+                Url = request.Url.AbsoluteString
+            });
             return true;
         }
 
         public override void LoadStarted(UIWebView webView)
         {
-            webView.UserInteractionEnabled = false;
-            _cookieWebView.OnNavigating(new CookieNavigationEventArgs
-            {
-                Url = webView.Request.Url.AbsoluteString
-            });
+            
         }
 
         public override void LoadFailed(UIWebView webView, NSError error)

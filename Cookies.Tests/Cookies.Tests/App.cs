@@ -18,7 +18,7 @@ namespace Cookies.Tests
                 {
                     Source = new UrlWebViewSource
                     {
-                        Url = "http://www.xamarin.com"
+                        Url = "http://dfwmobile.net"
                     }
                 };
 
