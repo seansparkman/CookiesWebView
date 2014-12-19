@@ -53,7 +53,7 @@ namespace Cookies.iOS.Views
 
         public override void LoadStarted(UIWebView webView)
         {
-            
+            // TODO: Add code here to possible redirect
         }
 
         public override void LoadFailed(UIWebView webView, NSError error)
@@ -81,7 +81,7 @@ namespace Cookies.iOS.Views
                     Path = cookie.Path,
                     Secure = cookie.IsSecure,
                     Value = cookie.Value,
-                    Discard = cookie.IsSessionOnly,
+                    // TODO: Discard = cookie.IsSessionOnly, // ios version is a dictionary, might not be added
                     Version = Convert.ToInt32(cookie.Version)
                 });
                 // TODO:  Expires = cookie.ExpiresDate,
