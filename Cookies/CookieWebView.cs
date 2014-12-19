@@ -14,7 +14,7 @@ namespace Cookies
     public class CookieWebView
         : WebView
     {
-        public CookieCollection Cookies { get; set; }
+        public CookieCollection Cookies { get; protected set; }
 
         public event WebViewNavigatedHandler Navigated;
         public event WebViewNavigatingHandler Navigating;
