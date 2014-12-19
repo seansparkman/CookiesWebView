@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>CookieWebView</id>
-		<version>1.0.6</version>
+		<version>1.0.7</version>
 		<title>Xamarin.Forms - Cookie Enabled Web View</title>
 		<authors>seansparkman</authors>
 		<owners>Sean Sparkman</owners>
@@ -12,7 +12,7 @@
 		<description>Xamarin.Forms Web View that supports cookies and loading pages event</description>
 		<tags>xamarin monodroid monotouch windows8 winrt wp wpdev windowsphone xamarinforms</tags>
 		<dependencies>
-		  <dependency id="Xamarin.Forms" version="1.2.2.6243" />
+		  <dependency id="Xamarin.Forms" version="1.2.3.6257" />
 		</dependencies>
 	</metadata>
 	<files>		
