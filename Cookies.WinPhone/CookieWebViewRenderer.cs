@@ -20,6 +20,11 @@ namespace Cookies.WinPhone
         {
             base.OnElementChanged(e);
 
+            CookieWebView.RegisterRenderer(cookie =>
+            {
+                Control.GetCookies().Add(cookie);
+            });
+
             if (e.OldElement == null)
             {
                 Control.Navigating += ControlOnNavigating;
@@ -29,10 +34,9 @@ namespace Cookies.WinPhone
 
         protected void ControlOnNavigated(object sender, System.Windows.Navigation.NavigationEventArgs navigationEventArgs)
         {
-            CookieWebView.Cookies = Control.GetCookies();
             CookieWebView.OnNavigated(new CookieNavigatedEventArgs()
             {
-                Cookies = CookieWebView.Cookies,
+                Cookies = Control.GetCookies(),
                 Url = navigationEventArgs.Uri.ToString()
             });
         }
