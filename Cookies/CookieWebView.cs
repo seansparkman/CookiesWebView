@@ -26,6 +26,7 @@ namespace Cookies
             if (eventHandler != null)
             {
                 eventHandler(this, args);
+                Cookies = args.Cookies;
             }
         }
 
