@@ -20,11 +20,6 @@ namespace Cookies.WinPhone
         {
             base.OnElementChanged(e);
 
-            CookieWebView.RegisterRenderer(cookie =>
-            {
-                Control.GetCookies().Add(cookie);
-            });
-
             if (e.OldElement == null)
             {
                 Control.Navigating += ControlOnNavigating;
