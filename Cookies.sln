@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cookies", "Cookies\Cookies.csproj", "{4D710AF5-8F72-4BDB-9CE5-A9A41DCDE22D}"
 EndProject
@@ -341,9 +341,9 @@ Global
 		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|ARM.Deploy.0 = Debug|ARM
 		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
+		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
 		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|x86.ActiveCfg = Debug|x86
 		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|x86.Build.0 = Debug|x86
 		{FDA15E33-32E3-4022-A4A2-68F41693A8BD}.Debug|x86.Deploy.0 = Debug|x86
@@ -366,7 +366,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{82E17445-C1F9-4CDB-B7B4-0F873EFAE864} = {D0804F15-390E-469E-8E3F-6143D19D9847}
 		{76EA1DD1-4795-465B-BDBE-F779EBE376F5} = {D0804F15-390E-469E-8E3F-6143D19D9847}
 		{8ABDD54C-4D66-44E1-BFB7-2C2C36ACAADE} = {D0804F15-390E-469E-8E3F-6143D19D9847}
 		{FDA15E33-32E3-4022-A4A2-68F41693A8BD} = {D0804F15-390E-469E-8E3F-6143D19D9847}
