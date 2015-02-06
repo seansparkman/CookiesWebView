@@ -11,7 +11,7 @@ using WebView = Xamarin.Forms.WebView;
 namespace Cookies.Android
 {
     public class CookieWebViewRenderer
-        : Xamarin.Forms.Platform.Android.WebRenderer
+        : Xamarin.Forms.Platform.Android.WebViewRenderer
     {
         protected override void OnElementChanged(ElementChangedEventArgs<WebView> e)
         {

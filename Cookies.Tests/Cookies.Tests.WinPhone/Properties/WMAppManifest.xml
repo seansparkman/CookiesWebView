@@ -2,7 +2,7 @@
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US"/>
-  <App xmlns="" ProductID="{66c312f3-33a8-48a8-bd8b-6fb2ef68fe58}" Title="Cookies.Tests.WinPhone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Cookies.Tests.WinPhone author" Description="Sample description" Publisher="Cookies.Tests.WinPhone" PublisherID="{584a832b-24ba-4831-b6dd-fddf0a851db3}">
+  <App xmlns="" ProductID="{66c312f3-33a8-48a8-bd8b-6fb2ef68fe58}" Title="Cookies.Tests.WinPhone" RuntimeType="Silverlight" Version="1.0.9" Genre="apps.normal"  Author="Cookies.Tests.WinPhone author" Description="Sample description" Publisher="Cookies.Tests.WinPhone" PublisherID="{584a832b-24ba-4831-b6dd-fddf0a851db3}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING"/>

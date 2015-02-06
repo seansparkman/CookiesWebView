@@ -12,15 +12,14 @@ using Xamarin.Forms.Platform.Android;
 namespace Cookies.Tests.Droid
 {
     [Activity(Label = "Cookies.Tests", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            Xamarin.Forms.Forms.Init(this, bundle);
-
-            SetPage(App.MainPage);
+            global::Xamarin.Forms.Forms.Init(this, bundle);
+            LoadApplication(new App());
         }
     }
 }

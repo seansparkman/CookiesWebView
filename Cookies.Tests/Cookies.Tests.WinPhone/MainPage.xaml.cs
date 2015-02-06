@@ -14,15 +14,16 @@ using Xamarin.Forms;
 
 namespace Cookies.Tests.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : global::Xamarin.Forms.Platform.WinPhone.FormsApplicationPage
     {
         CookieWebViewRenderer _renderer = new CookieWebViewRenderer();
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
-            Forms.Init();
-            Content = Cookies.Tests.App.MainPage.ConvertPageToUIElement(this);
+            global::Xamarin.Forms.Forms.Init();
+            LoadApplication(new Cookies.Tests.App());
         }
     }
 }

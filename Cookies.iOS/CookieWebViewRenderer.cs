@@ -4,8 +4,13 @@ using System.Linq;
 using System.Net;
 using Cookies;
 using Cookies.iOS.Views;
+#if __UNIFIED__
+using Foundation;
+using UIKit;
+#else
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+#endif
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
