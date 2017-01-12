@@ -52,17 +52,20 @@ namespace Cookies.Android
         {
             var cookieHeader = CookieManager.Instance.GetCookie(url);
             var cookies = new CookieCollection();
-            var cookiePairs = cookieHeader.Split('&');
-            foreach (var cookiePair in cookiePairs)
+            if (cookieHeader != null)
             {
-                var cookiePieces = cookiePair.Split('=');
-                if (cookiePieces[0].Contains(":"))
-                    cookiePieces[0] = cookiePieces[0].Substring(0, cookiePieces[0].IndexOf(":"));
-                cookies.Add(new Cookie
+                var cookiePairs = cookieHeader.Split('&');
+                foreach (var cookiePair in cookiePairs)
                 {
-                    Name = cookiePieces[0],
-                    Value = cookiePieces[1]
-                });
+                    var cookiePieces = cookiePair.Split('=');
+                    if (cookiePieces[0].Contains(":"))
+                        cookiePieces[0] = cookiePieces[0].Substring(0, cookiePieces[0].IndexOf(":"));
+                    cookies.Add(new Cookie
+                    {
+                        Name = cookiePieces[0],
+                        Value = cookiePieces[1]
+                    });
+                }
             }
 
             _cookieWebView.OnNavigated(new CookieNavigatedEventArgs
